@@ -115,11 +115,6 @@ database/
 | `RESEND_FROM_EMAIL` | Sender email address.               |
 | `RESEND_TO_EMAIL`   | Recipient email address.            |
 
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
