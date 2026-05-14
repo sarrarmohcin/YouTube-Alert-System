@@ -51,7 +51,7 @@ database/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repo/youtube-alert.git
+   git clone [https://github.com/your-repo/youtube-alert.git](https://github.com/sarrarmohcin/YouTube-Alert-System.git)
    cd youtube-alert
    ```
 
