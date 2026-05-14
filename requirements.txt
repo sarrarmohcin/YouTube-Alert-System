@@ -1,0 +1,8 @@
+groq
+dotenv
+curl_cffi
+feedparser
+yt_dlp
+fake_useragent
+langdetect
+supabase
