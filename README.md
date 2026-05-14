@@ -115,6 +115,11 @@ database/
 | `RESEND_FROM_EMAIL` | Sender email address.               |
 | `RESEND_TO_EMAIL`   | Recipient email address.            |
 
+## DEMO
+
+After configration and execution of the project, an email will be sent to the `RESEND_TO_EMAIL` contains matched videos
+
+![email](email.png)
 
 ---
 
