@@ -9,7 +9,8 @@ import random
 import asyncio 
 from langdetect import detect
 import time
-
+from dotenv import load_dotenv
+import os
 class youtubeVideoController:
     
 
@@ -17,6 +18,17 @@ class youtubeVideoController:
     def __init__(self,video, logger):
         self.video = video
         self.logger = logger
+        self.proxy_url = None
+        
+        # load proxy if exist
+        load_dotenv()
+        proxy_url = os.getenv("PROXY_URL")
+        
+        if not proxy_url:
+            self.logger.warning("Proxy URL not found. The video transcript may be unavailable or empty.")
+            return 
+        
+        self.proxy_url = proxy_url
 
     
     '''
@@ -209,10 +221,13 @@ class youtubeVideoController:
             # add header to session
             session.headers.update(headers)
 
-            proxies = {
-                "http": "http://sscraperapi:c353f5398edc75d4e3ed264703fc4a5d@proxy-server.scraperapi.com:8001",
-                "https": "http://sscraperapi:c353f5398edc75d4e3ed264703fc4a5d@proxy-server.scraperapi.com:8001"
-            }
+            if self.proxy_url:
+                proxies = {
+                    "http": self.proxy_url,
+                    "https": self.proxy_url
+                }
+            else:
+                proxies = None
             
             
             # start retries
@@ -220,7 +235,10 @@ class youtubeVideoController:
                 self.logger.info(f"Download Transcript video: {self.video}, Message: retry {i+1}")
                 try:
                     # if it is the third retry use the proxy, else use simple request
-                    response = await session.get(transcript_url, timeout=30, proxies=proxies, verify=False)
+                    if proxies:
+                        response = await session.get(transcript_url, timeout=30, proxies=proxies, verify=False)
+                    else:
+                        response = await session.get(transcript_url, timeout=30)
 
                     # raise for erros
                     response.raise_for_status()
