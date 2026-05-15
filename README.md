@@ -6,7 +6,7 @@ The **YouTube Alert System** is a Python-based application that extracts video d
 
 ## Features
 
-- **YouTube Channel Scraper**: Extracts video metadata and transcripts from YouTube channels using RSS feeds and `yt-dlp`.
+- **YouTube Channel Scraper**: Extracts video metadata and transcripts from YouTube channels using RSS feeds, `yt-dlp`.
 - **Content Analysis**: Summarizes video transcripts using the Groq API.
 - **Database Integration**: Stores video data in a Supabase database.
 - **Keyword Matching**: Matches keywords in video content and triggers alerts.
@@ -33,7 +33,7 @@ database/
 - **`main.py`**: Entry point for the application.
 - **`app/`**: Contains the core logic for scraping and analyzing YouTube videos.
 - **`database/`**: SQL scripts and Supabase client for database operations.
-- **`.env.example`**: Stores environment variables (e.g., Supabase credentials).
+- **`.env.example`**: Stores environment variables (e.g., Supabase, Groq credentials and proxy url).
 
 ---
 
@@ -106,14 +106,16 @@ database/
 
 ## Environment Variables
 
-| Variable            | Description                         |
-| ------------------- | ----------------------------------- |
-| `SUPABASE_URL`      | Your Supabase project URL.          |
-| `SUPABASE_KEY`      | Your Supabase secret key.           |
-| `GROQ_KEY`          | API key for the Groq summarization. |
-| `RESEND_API_KEY`    | API key for Resend email service.   |
-| `RESEND_FROM_EMAIL` | Sender email address.               |
-| `RESEND_TO_EMAIL`   | Recipient email address.            |
+| Variable            | Description                                                                 |
+| ------------------- | --------------------------------------------------------------------------- |
+| `SUPABASE_URL`      | Your Supabase project URL.                                                  |
+| `SUPABASE_KEY`      | Your Supabase secret key.                                                   |
+| `PROXY_URL`         | Proxy used to download transcript without get the "Too Many Requests" error |
+| `RESEND_TO_EMAIL`   | Recipient email address. (stored in Supabase Secrets)                       |
+| `RESEND_API_KEY`    | API key for Resend email service. (stored in Supabase Secrets)              |
+| `RESEND_FROM_EMAIL` | Sender email address. (stored in Supabase Secrets)                          |
+| `RESEND_TO_EMAIL`   | Recipient email address. (stored in Supabase Secrets)                       |
+
 
 ## DEMO
 
