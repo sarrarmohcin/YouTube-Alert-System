@@ -140,6 +140,13 @@ After configration and execution of the project, an email will be sent to the `R
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [Groq](https://groq.com)
 
+## 📬 Contact
+
+Feel free to reach out:
+
+- 📧 Email: sarrar.mohcin@gmail.com
+- 🌐 Upwork: [https://your-website.com](https://www.upwork.com/freelancers/~01901f654ceb7c53fc)
+
 ## Licence
 <img src="https://img.shields.io/badge/license-AGPL--v3-blue" alt="license-AGPLv3-blue" style="margin-left:10px"/>
 
