@@ -33,7 +33,7 @@ database/
 - **`main.py`**: Entry point for the application.
 - **`app/`**: Contains the core logic for scraping and analyzing YouTube videos.
 - **`database/`**: SQL scripts and Supabase client for database operations.
-- **`.env.example`**: Stores environment variables (e.g., Supabase, Groq credentials and proxy url).
+- **`.env.example`**: Stores environment variables (e.g., Supabase, Groq, Resend credentials and the proxy url).
 
 ---
 
@@ -110,6 +110,7 @@ database/
 | ------------------- | --------------------------------------------------------------------------- |
 | `SUPABASE_URL`      | Your Supabase project URL.                                                  |
 | `SUPABASE_KEY`      | Your Supabase secret key.                                                   |
+| `GROQ_KEY`          | Groq API Key for video Analyzer (extract summary).                          |
 | `PROXY_URL`         | Proxy used to download transcript without get the "Too Many Requests" error |
 | `RESEND_TO_EMAIL`   | Recipient email address. (stored in Supabase Secrets)                       |
 | `RESEND_API_KEY`    | API key for Resend email service. (stored in Supabase Secrets)              |
