@@ -6,6 +6,7 @@
     <img src="https://img.shields.io/badge/docker-supported-blue" alt="license-AGPLv3-blue" style="margin-left:10px"/>
     <img src="https://img.shields.io/badge/Supabase-000000?logo=supabase" alt="license-AGPLv3-blue" style="margin-left:10px"/>
 </div>
+
 The **YouTube Alert System** is a Python-based application that extracts video data from YouTube channels, extract transcript and summarize it, and stores the data in a Supabase database. It also includes functionality to match keywords in video content and send alerts via email.
 
 ---
