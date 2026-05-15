@@ -42,7 +42,7 @@ if __name__ == "__main__":
             records.append(video_info)
             
         # analyze videos
-        analyzer = VideoAnalyzer()
+        analyzer = VideoAnalyzer(logger)
         for rec in records:
             if rec['content']:
                 summary = analyzer.inference(rec['content'])
