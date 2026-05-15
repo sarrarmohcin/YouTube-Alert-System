@@ -1,8 +1,11 @@
 
 
 <h1 align="center"><img src="icon.png" alt="logo" style="width: 50px;" width="50" style="margin-left:10px"/> YouTube Alert System </h1>
-
-
+<div align="center" style="margin-bottom:15px;">
+    <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="license-AGPLv3-blue" style="margin-left:10px"/>
+    <img src="https://img.shields.io/badge/docker-supported-blue" alt="license-AGPLv3-blue" style="margin-left:10px"/>
+    <img src="https://img.shields.io/badge/Supabase-000000?logo=supabase" alt="license-AGPLv3-blue" style="margin-left:10px"/>
+</div>
 The **YouTube Alert System** is a Python-based application that extracts video data from YouTube channels, extract transcript and summarize it, and stores the data in a Supabase database. It also includes functionality to match keywords in video content and send alerts via email.
 
 ---
@@ -135,3 +138,7 @@ After configration and execution of the project, an email will be sent to the `R
 - [Resend](https://resend.com)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [Groq](https://groq.com)
+
+## Licence
+<img src="https://img.shields.io/badge/license-AGPL--v3-blue" alt="license-AGPLv3-blue" style="margin-left:10px"/>
+
