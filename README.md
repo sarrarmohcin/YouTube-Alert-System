@@ -1,6 +1,6 @@
 
 
-<h1 align="center"><img src="./logo.png" alt="logo" style="width: 100px;" width="100" style="margin-left:10px"/> YouTube Alert System </h1>
+<h1 align="center"><img src="icon.png" alt="logo" style="width: 50px;" width="50" style="margin-left:10px"/> YouTube Alert System </h1>
 
 
 The **YouTube Alert System** is a Python-based application that extracts video data from YouTube channels, extract transcript and summarize it, and stores the data in a Supabase database. It also includes functionality to match keywords in video content and send alerts via email.
