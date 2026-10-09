@@ -59,7 +59,7 @@ database/
 
    ```bash
    git clone https://github.com/sarrarmohcin/YouTube-Alert-System.git
-   cd youtube-alert
+   cd YouTube-Alert-System
    ```
 
 2. Install Python dependencies:
