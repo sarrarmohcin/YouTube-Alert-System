@@ -119,7 +119,6 @@ database/
 | `SUPABASE_KEY`      | Your Supabase secret key.                                                   |
 | `GROQ_KEY`          | Groq API Key for video Analyzer (extract summary).                          |
 | `PROXY_URL`         | Proxy used to download transcript without get the "Too Many Requests" error |
-| `RESEND_TO_EMAIL`   | Recipient email address. (stored in Supabase Secrets)                       |
 | `RESEND_API_KEY`    | API key for Resend email service. (stored in Supabase Secrets)              |
 | `RESEND_FROM_EMAIL` | Sender email address. (stored in Supabase Secrets)                          |
 | `RESEND_TO_EMAIL`   | Recipient email address. (stored in Supabase Secrets)                       |
