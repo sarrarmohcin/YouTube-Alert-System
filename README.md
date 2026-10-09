@@ -2,14 +2,14 @@
 
 <h1 align="center"> YouTube Alert System </h1>
 <div align="center" style="margin-bottom:15px;">
-    <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="license-AGPLv3-blue" style="margin-left:10px"/>
-    <img src="https://img.shields.io/badge/docker-supported-blue" alt="license-AGPLv3-blue" style="margin-left:10px"/>
-    <img src="https://img.shields.io/badge/Supabase-000000?logo=supabase" alt="license-AGPLv3-blue" style="margin-left:10px"/>
+    <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="python-3.10" style="margin-left:10px"/>
+    <img src="https://img.shields.io/badge/docker-supported-blue" alt="docker-supported-blue" style="margin-left:10px"/>
+    <img src="https://img.shields.io/badge/Supabase-000000?logo=supabase" alt="Supabase-000000" style="margin-left:10px"/>
 </div>
 
 ![hero](hero.png)
 
-The **YouTube Alert System** is a Python-based application that extracts video data from YouTube channels, extract transcript and summarize it, and stores the data in a Supabase database. It also includes functionality to match keywords in video content and send alerts via email.
+The **YouTube Alert System** is a Python-based application that extracts video data from YouTube channels, extracts transcripts and summarizes them, and stores the data in a Supabase database. It also includes functionality to match keywords in video content and send alerts via email.
 
 ---
 
@@ -88,7 +88,7 @@ database/
 
 6. Add searched keywords to `alert_keywords` table
 
-7. Add YouTube channelto `yt_sources` table, Note: the url must be in format `https://www.youtube.com/feeds/videos.xml?channel_id=THE_CHANNEL_ID`
+7. Add YouTube channel to `yt_sources` table, Note: the url must be in format `https://www.youtube.com/feeds/videos.xml?channel_id=THE_CHANNEL_ID`
 
 ---
 
@@ -120,7 +120,7 @@ database/
 | `SUPABASE_URL`      | Your Supabase project URL.                                                  |
 | `SUPABASE_KEY`      | Your Supabase secret key.                                                   |
 | `GROQ_KEY`          | Groq API Key for video Analyzer (extract summary).                          |
-| `PROXY_URL`         | Proxy used to download transcript without get the "Too Many Requests" error |
+| `PROXY_URL`         | Proxy used to download transcript without getting the "Too Many Requests" error |
 | `RESEND_API_KEY`    | API key for Resend email service. (stored in Supabase Secrets)              |
 | `RESEND_FROM_EMAIL` | Sender email address. (stored in Supabase Secrets)                          |
 | `RESEND_TO_EMAIL`   | Recipient email address. (stored in Supabase Secrets)                       |
@@ -128,7 +128,7 @@ database/
 
 ## DEMO
 
-After configration and execution of the project, an email will be sent to the `RESEND_TO_EMAIL` contains matched videos
+After configuration and execution of the project, an email will be sent to the `RESEND_TO_EMAIL` containing matched videos
 
 ![email](email.png)
 
